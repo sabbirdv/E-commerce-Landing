@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Aura</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand position-fixed mx-auto px-4 px-sm-5">
+            <div class="container-fluid width p-0">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="svg/logo.svg" alt="brand-logo">
+                    <h1 class="fw-bold">AURA</h1>
+                </a>
+                <ul class="navbar-nav mx-auto  d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link p-16" aria-current="page" href="#shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-16" href="#collections">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-16" href="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-16" href="journal">Journal</a>
+                    </li>
+                </ul>
+                <ul class=" my-auto nav-btns d-flex">
+                    <li class="nav-btn">
+                        <a class="nav-btn-link" href="#">
+                            <img src="svg/search.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-btn">
+                        <a class="nav-btn-link" href="#">
+                            <img src="svg/person.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-btn">
+                        <a class="nav-btn-link" href="#">
+                            <img src="svg/heart.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-btn">
+                        <a class="nav-btn-link position-relative" href="#">
+                            <img src="svg/chart.svg" alt="">
+                            <span class="position-absolute d-flex justify-content-center align-items-center rounded rounded-circle">2</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="hero width mx-auto">
+        <div class="hero-section row px-4 px-sm-5">
+            <div class="hero-left col">
+                <div class="new-collection rounded rounded-pill d-inline-flex align-items-center">
+                    <img src="svg/orange-star.svg" alt="star">
+                    <h6>New Winter Collection 2024</h6>
+                </div>
+                <div class="hero-title">
+                    Timeless elegance meets modern craft
+                </div>
+                <div class="hero-pera">
+                    Discover our curated collection of handcrafted accessories designed for those who appreciate quality, sustainability, and understated luxury.
+                </div>
+                <div class="hero-btn-group">
+                    <a class="btn text-light h-btn-1" href="#">
+                        Shop Collection
+                        <img src="svg/white-arrow.svg" alt="arrow">
+                    </a>
+                    <a class="btn btn-lilght h-btn-2" href="#">
+                        View Lookbook
+                    </a>
+                </div>
+                <div class="hero-feature d-flex justify-content-centerc align-items-center">
+                    <div class="h-features d-flex gap-2">
+                        <img src="svg/check.svg" alt="green-check">
+                        <p>
+                            Free Shipping
+                        </p>
+                    </div>
+                    <div class="h-features d-flex gap-2">
+                        <img src="svg/check.svg" alt="green-check">
+                        <p>
+                            30-Day Returns
+                        </p>
+                    </div>
+                    <div class="h-features d-flex gap-2">
+                        <img src="svg/check.svg" alt="green-check">
+                        <p>
+                            Lifetime Warranty
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right col text-end">
+                <div class="hero-right-container position-relative">
+                    <img src="img/hero-img.png" class="hero-img"alt="">
+                    <div class="hero-top-1 position-absolute d-flex gap-1 flex-column align-items-start">
+                        <div class="stars d-flex gap-2 align-items-start">
+                            <img src="svg/yellow-star.svg" alt="star">
+                            <img src="svg/yellow-star.svg" alt="star">
+                            <img src="svg/yellow-star.svg" alt="star">
+                            <img src="svg/yellow-star.svg" alt="star">
+                            <img src="svg/yellow-star.svg" alt="star">
+                        </div>
+                        <p>
+                            4.9 from 2,347 reviews
+                        </p>
+                    </div>
+                    <div class="hero-top-2 position-absolute d-flex gap-3 justify-content-center align-items-start">
+                        <img src="img/hero-top-img.png" alt="img">
+                        <div class="hero-top-2-text d-flex flex-column justify-content-center align-items-start">
+                            <p>
+                                Just added
+                            </p>
+                            <h5>
+                                Classic Timepiece
+                            </h5>
+                            <h5>
+                                $349
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured width mx-auto" id="shop">
+        <div class="featured-container px-4 px-sm-5 d-flex flex-column justify-content-centeralign-items-start">
+            <div class="featured-head">
+                <div class="section-label rounded rounded-pill">
+                    <span>Featured</span>
+                </div>
+                <div class="featured-title d-flex justify-content-between">
+                    <h1>
+                        Shop our bestsellers
+                    </h1>
+                    <div class="featured-btn d-flex justify-content-center align-items-center">
+                        <span>View All</span>
+                        <img src="svg/arrow.svg " alt=""> 
+                    </div>
+                </div>
+            </div>
+            <div class="featured-body d-flex justify-content-between align-items-center">
+                <div class="featured-card position-relative">
+                    <div class="card-img-label">
+                        BESR SELLER
+                    </div>
+                    <div class="featured-card-img position-relative">
+                        <img src="img/featured-img-1.png" alt="">
+                        <div class="card-img-icon-group">
+                            <a href="#">
+                                <img src="svg/heart.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="svg/chart.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                    </div>
+                    <div class="featured-card-text">
+                        Minimal Leather Bag
+                    </div>
+                    <div class="featured-card-price">
+                        <div class="featured-card-text">
+                            $289    
+                        </div>
+                        <div class="card-colors" style="background-color:#7B3306 ;"></div>
+                        <div class="card-colors" style="background-color:#1E2939 ;"></div>
+                        <div class="card-colors" style="background-color:#57534D ;"></div>
+                    </div>
+                </div>
+                <div class="featured-card position-relative">
+                    <div class="card-img-label">
+                        NEW
+                    </div>
+                    <div class="featured-card-img position-relative">
+                        <img src="img/featured-img-2.png" alt="">
+                        <div class="card-img-icon-group">
+                            <a href="#">
+                                <img src="svg/heart.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="svg/chart.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                    </div>
+                    <div class="featured-card-text">
+                        Classic Timepiece
+                    </div>
+                    <div class="featured-card-price">
+                        <div class="featured-card-text">
+                            $349
+                        </div>
+                        <div class="card-colors" style="background-color:#1D293D ;"></div>
+                        <div class="card-colors" style="background-color:#D1D5DC ;"></div>
+                        <div class="card-colors" style="background-color:#BB4D00 ;"></div>
+                    </div>
+                </div>
+                <div class="featured-card position-relative">
+                    <div class="featured-card-img position-relative">
+                        <img src="img/featured-img-3.png" alt="">
+                        <div class="card-img-icon-group">
+                            <a href="#">
+                                <img src="svg/heart.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="svg/chart.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                    </div>
+                    <div class="featured-card-text">
+                        Essential Accessories
+                    </div>
+                    <div class="featured-card-price">
+                        <div class="featured-card-text">
+                            $129
+                        </div>
+                        <div class="card-colors" style="background-color:#101828 ;"></div>
+                        <div class="card-colors" style="background-color: #A6A09B ;"></div>
+                        <div class="card-colors" style="background-color:#45556C  ;"></div>
+                    </div>
+                </div>
+                <div class="featured-card position-relative">
+                    <div class="card-img-label">
+                        LIMITED
+                    </div>
+                    <div class="featured-card-img position-relative">
+                        <img src="img/featured-img-4.png" alt="">
+                        <div class="card-img-icon-group">
+                            <a href="#">
+                                <img src="svg/heart.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="svg/chart.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                    </div>
+                    <div class="featured-card-text">
+                        Signature Collection
+                    </div>
+                    <div class="featured-card-price">
+                        <div class="featured-card-text">
+                            $449
+                        </div>
+                        <div class="card-colors" style="background-color:#1E2939 ;"></div>
+                        <div class="card-colors" style="background-color:#525252  ;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+</body>
+</html>
