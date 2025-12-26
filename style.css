@@ -1,7 +1,8 @@
 *{
-   box-sizing: border-box;
+   
    margin: 0px;
    padding: 0px;
+   box-sizing: border-box;
    font-family: var(--font);
 }
 p,h1,h2,h3,h4,h5,h6{
@@ -76,20 +77,18 @@ nav .navbar-brand h1{
 }
 .hero{
    padding: 160px 0px 128px;
+   background: linear-gradient(180deg, #F9FAFB 0%, #FFF 100%);
 }
 .hero .hero-left{
    margin-top: 125px;
    padding: 0px;
-}
-.test .div-1 , .test .div-2 {
-   height: 200px;
-   width: 200px;
 }
 .new-collection{
    background: linear-gradient(90deg, #FFFBEB 0%, #FFF7ED 100%);
    border: 1px solid rgba(254, 243, 198, 0.50);
    padding: 9px 15px;
    gap: 8px;
+   width: fit-content;
 }
 .new-collection img{
    height: 14px;
@@ -102,17 +101,20 @@ nav .navbar-brand h1{
    font-weight: 400;
    line-height: 150%;
 }
-.hero{
-   background: linear-gradient(180deg, #F9FAFB 0%, #FFF 100%);
-}
 .hero-title{
    color: var(--dark);
    font-size: 68px;
    font-weight: 700;
    line-height: 105%;
    letter-spacing: -2.04px;
-   width: 572px;
+   width: 85%;
    margin-bottom: 9px;
+   word-wrap: break-word;
+}
+@media (max-width:1200px){
+   .hero-title{
+      width: 100%;
+   }
 }
 .hero-pera{
    color: var(--normal);
@@ -249,4 +251,7 @@ nav .navbar-brand h1{
    font-weight: 400;
    line-height: 150%;
    gap: 14px;
+}
+.featured-card .featured-card-img img{
+   border-radius: 20px;
 }
