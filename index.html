@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand position-fixed mx-auto px-4 px-sm-5">
-            <div class="container-fluid width p-0">
+        <nav class="navbar navbar-expand position-fixed ">
+            <div class="container-fluid mx-auto px-4 px-sm-5 width">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="svg/logo.svg" alt="brand-logo">
                     <h1 class="fw-bold">AURA</h1>
@@ -58,10 +58,10 @@
             </div>
         </nav>
     </header>
-    <div class="hero width mx-auto">
-        <div class="hero-section row px-4 px-sm-5">
-            <div class="hero-left col">
-                <div class="new-collection rounded rounded-pill d-inline-flex align-items-center">
+    <div class="hero">
+        <div class="hero-section width mx-auto row px-4 px-sm-5 gap-5 gap-xl-0">
+            <div class="hero-left col-xl-6">
+                <div class="new-collection rounded rounded-pill d-flex align-items-center me-auto">
                     <img src="svg/orange-star.svg" alt="star">
                     <h6>New Winter Collection 2024</h6>
                 </div>
@@ -101,10 +101,10 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-right col text-end">
-                <div class="hero-right-container position-relative">
-                    <img src="img/hero-img.png" class="hero-img"alt="">
-                    <div class="hero-top-1 position-absolute d-flex gap-1 flex-column align-items-start">
+            <div class="hero-right col-xl-6 d-flex justify-content-center justify-content-xl-end p-0">
+                <div class="hero-right-container container-xl position-relative">
+                    <img src="img/hero-img.png" class="hero-img img-fluid vw-100 w-100 h-100"alt="">
+                    <div class="hero-top-1 position-absolute d-none d-xl-flex gap-1 flex-column align-items-start">
                         <div class="stars d-flex gap-2 align-items-start">
                             <img src="svg/yellow-star.svg" alt="star">
                             <img src="svg/yellow-star.svg" alt="star">
@@ -116,7 +116,7 @@
                             4.9 from 2,347 reviews
                         </p>
                     </div>
-                    <div class="hero-top-2 position-absolute d-flex gap-3 justify-content-center align-items-start">
+                    <div class="hero-top-2 position-absolute d-none d-xl-flex gap-3 justify-content-center align-items-start">
                         <img src="img/hero-top-img.png" alt="img">
                         <div class="hero-top-2-text d-flex flex-column justify-content-center align-items-start">
                             <p>
@@ -150,120 +150,134 @@
                     </div>
                 </div>
             </div>
-            <div class="featured-body d-flex justify-content-between align-items-center">
+            <div class="featured-body d-flex justify-content-between">
                 <div class="featured-card position-relative">
-                    <div class="card-img-label">
-                        BESR SELLER
-                    </div>
                     <div class="featured-card-img position-relative">
-                        <img src="img/featured-img-1.png" alt="">
-                        <div class="card-img-icon-group">
+                        <img class="card-img" src="img/featured-img-1.png" alt="">
+                        <div class="card-img-icon-group flex-column gap-2 position-absolute">
                             <a href="#">
                                 <img src="svg/heart.svg" alt="">
                             </a>
                             <a href="#">
-                                <img src="svg/chart.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffffff" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg>
                             </a>
                         </div>
-                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                        <a href="#" class="card-btn btn position-absolute text-center stretchedlink">Quick View</a>
+                        <div class="card-img-label rounded-pill position-absolute">
+                            BESR SELLER
+                        </div>
                     </div>
-                    <div class="featured-card-text">
+                    <div class="text-1">
                         Minimal Leather Bag
                     </div>
                     <div class="featured-card-price">
-                        <div class="featured-card-text">
+                        <div class="text-2">
                             $289    
                         </div>
-                        <div class="card-colors" style="background-color:#7B3306 ;"></div>
-                        <div class="card-colors" style="background-color:#1E2939 ;"></div>
-                        <div class="card-colors" style="background-color:#57534D ;"></div>
+                        <div class="d-flex align-items-center">
+                            <div class="card-colors" style="background-color:#7B3306 ;"></div>
+                            <div class="card-colors" style="background-color:#1E2939 ;"></div>
+                            <div class="card-colors" style="background-color:#57534D ;"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="featured-card position-relative">
-                    <div class="card-img-label">
-                        NEW
-                    </div>
+               <div class="featured-card position-relative">
                     <div class="featured-card-img position-relative">
-                        <img src="img/featured-img-2.png" alt="">
-                        <div class="card-img-icon-group">
+                        <img class="card-img" src="img/featured-img-2.png" alt="">
+                        <div class="card-img-icon-group flex-column gap-2 position-absolute">
                             <a href="#">
                                 <img src="svg/heart.svg" alt="">
                             </a>
                             <a href="#">
-                                <img src="svg/chart.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffffff" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg>
                             </a>
                         </div>
-                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                        <a href="#" class="card-btn btn position-absolute text-center stretchedlink">Quick View</a>
+                        <div class="card-img-label rounded-pill position-absolute">
+                            NEW
+                        </div>
                     </div>
-                    <div class="featured-card-text">
+                    <div class="text-1">
                         Classic Timepiece
                     </div>
                     <div class="featured-card-price">
-                        <div class="featured-card-text">
+                        <div class="text-2">
                             $349
                         </div>
-                        <div class="card-colors" style="background-color:#1D293D ;"></div>
-                        <div class="card-colors" style="background-color:#D1D5DC ;"></div>
-                        <div class="card-colors" style="background-color:#BB4D00 ;"></div>
+                        <div class="d-flex align-items-center">
+                            <div class="card-colors" style="background-color:#1D293D ;"></div>
+                            <div class="card-colors" style="background-color:#D1D5DC ;"></div>
+                            <div class="card-colors" style="background-color:#BB4D00 ;"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="featured-card position-relative">
                     <div class="featured-card-img position-relative">
-                        <img src="img/featured-img-3.png" alt="">
-                        <div class="card-img-icon-group">
+                        <img class="card-img" src="img/featured-img-3.png" alt="">
+                        <div class="card-img-icon-group flex-column gap-2 position-absolute">
                             <a href="#">
                                 <img src="svg/heart.svg" alt="">
                             </a>
                             <a href="#">
-                                <img src="svg/chart.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffffff" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg>
                             </a>
                         </div>
-                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                        <a href="#" class="card-btn btn position-absolute text-center stretchedlink">Quick View</a>
                     </div>
-                    <div class="featured-card-text">
-                        Essential Accessories
+                    <div class="text-1">
+                        Essential Accessories 
                     </div>
                     <div class="featured-card-price">
-                        <div class="featured-card-text">
-                            $129
+                        <div class="text-2">
+                            $129    
                         </div>
-                        <div class="card-colors" style="background-color:#101828 ;"></div>
-                        <div class="card-colors" style="background-color: #A6A09B ;"></div>
-                        <div class="card-colors" style="background-color:#45556C  ;"></div>
+                        <div class="d-flex align-items-center">
+                            <div class="card-colors" style="background-color:#101828 ;"></div>
+                            <div class="card-colors" style="background-color:#A6A09B ;"></div>
+                            <div class="card-colors" style="background-color:#45556C ;"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="featured-card position-relative">
-                    <div class="card-img-label">
-                        LIMITED
-                    </div>
                     <div class="featured-card-img position-relative">
-                        <img src="img/featured-img-4.png" alt="">
-                        <div class="card-img-icon-group">
+                        <img class="card-img" src="img/featured-img-4.png" alt="">
+                        <div class="card-img-icon-group flex-column gap-2 position-absolute">
                             <a href="#">
                                 <img src="svg/heart.svg" alt="">
                             </a>
                             <a href="#">
-                                <img src="svg/chart.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffffff" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg>
                             </a>
                         </div>
-                        <a href="#" class="btn bg-white py-3 m-1 text-center stretched-link">Quick View</a>
+                        <a href="#" class="card-btn btn position-absolute text-center stretchedlink">Quick View</a>
+                        <div class="card-img-label rounded-pill position-absolute">
+                            LIMITED
+                        </div>
                     </div>
-                    <div class="featured-card-text">
+                    <div class="text-1">
                         Signature Collection
                     </div>
                     <div class="featured-card-price">
-                        <div class="featured-card-text">
-                            $449
+                        <div class="text-2">
+                            $449    
                         </div>
-                        <div class="card-colors" style="background-color:#1E2939 ;"></div>
-                        <div class="card-colors" style="background-color:#525252  ;"></div>
+                        <div class="d-flex align-items-center">
+                            <div class="card-colors" style="background-color:#1E2939 ;"></div>
+                            <div class="card-colors" style="background-color:#525252 ;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         
+        </div>  
     </div>
-
 
 
 
