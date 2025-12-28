@@ -253,12 +253,15 @@ nav .navbar-brand h1{
    line-height: 150%;
    gap: 14px;
 }
+.featured-body{
+   flex-wrap: wrap;
+   gap: 30px;
+}
 .featured-card .featured-card-img{
    border-radius: 20px;
    overflow: hidden;
 }
 .featured-card .featured-card-img .card-img{
-   width: 100%;
    display: block;
    border-radius: 20px;
    transition: 0.5s;
