@@ -352,10 +352,6 @@ nav .navbar-brand h1{
 }
 
 
-
-
-
-
 .featured-card .card-colors:hover{
    transform: scale(0.8);
    outline: 2px solid rgba(0, 0, 0, 0.3);
@@ -373,4 +369,31 @@ nav .navbar-brand h1{
 .featured-card-img:hover.featured-card-img::before{
    display: block;
 }
-
+.why-us{
+   padding: 112px 0px;
+   background: linear-gradient(180deg, #F9FAFB 0%, #FFF 100%);
+}
+.why-us .why-us-card{
+   padding: 30px;
+}
+.why-us .why-us-card-logo{
+   width: fit-content;
+   border-radius: 14px;
+   background-color: var(--dark);
+}
+.why-us .why-us-card-logo img{
+   padding: 14px;
+}
+.why-us .why-us-card-title{
+   margin: 18px 0px 8px;
+   color: #101828;
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 150%;
+}
+.why-us .why-us-card-pera{
+   color: var(--normal);
+font-size: 14px;
+font-weight: 400;
+line-height: 160%;
+}
