@@ -423,13 +423,9 @@ line-height: 160%;
 .rdious-24{
    border-radius: 24px;
 }
-
 .coll-left-overlay{
    bottom: 40px;
    left: 40px;
-}
-.coll-img{
-   overflow: hidden;
 }
 .coll-left .coll-left-label{
    width: fit-content;
@@ -474,9 +470,9 @@ line-height: 160%;
 .coll-left .coll-left-btn:hover.coll-left-btn img{
    transform: translateX(3px);
 }
-/* .coll-right{
+.coll-right{
    gap: 24px;
-} */
+}
 .coll-right-overlay{
    bottom: 32px;
    left: 32px;
