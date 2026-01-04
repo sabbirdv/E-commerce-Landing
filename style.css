@@ -102,7 +102,7 @@ nav .navbar-brand h1{
    line-height: 150%;
 }
 .hero-title{
-   width: 85%;
+   width: 90%;
    color: var(--dark);
    font-size: 68px;
    font-weight: 700;
@@ -112,11 +112,12 @@ nav .navbar-brand h1{
    word-wrap: break-word;
 }
 @media (max-width:1200px){
+   .hero{
+      padding:0px 0px 128px;
+   }
    .hero-title{
       width: 100%;
    }
-}
-@media (max-width:1200px){
    .hero-pera{
       width: 100%;
    }
@@ -257,6 +258,7 @@ nav .navbar-brand h1{
    font-weight: 400;
    line-height: 150%;
    gap: 14px;
+   white-space: nowrap;
 }
 .featured-card .featured-card-img{
    border-radius: 20px;
@@ -346,8 +348,6 @@ nav .navbar-brand h1{
    display: inline-block;
    outline: 2px solid transparent;
 }
-
-
 .featured-card .card-colors:hover{
    transform: scale(0.8);
    outline: 2px solid rgba(0, 0, 0, 0.3);
@@ -364,6 +364,21 @@ nav .navbar-brand h1{
 }
 .featured-card-img:hover.featured-card-img::before{
    display: block;
+}
+@media (max-width:992px){
+   .featured-head .featured-title h1{
+      font-size: 32px;
+   }
+}
+@media (max-width:576px){
+   .featured-head .featured-title h1{
+      font-size: 28px;
+   }
+}
+@media (max-width:400px){
+   .featured-head .featured-title h1{
+      font-size: 24px;
+   }
 }
 .why-us{
    padding: 96px 0px;
@@ -501,4 +516,134 @@ line-height: 160%;
 }
 .coll-right .coll-right-btn:hover.coll-right-btn img{
    transform: translateX(3px);
+}
+@media (max-width:992px){
+   .coll-left .coll-left-title{
+      font-size: 28px;
+   }
+   .coll-right .coll-right-title{
+      font-size: 24px;
+   }  
+}
+@media (max-width:768px){
+   .coll-left .coll-left-title{
+      font-size: 24px;
+   }
+   .coll-right .coll-right-title{
+      font-size: 20px;
+   }  
+}
+.stats-section{
+   background: #F9FAFB;
+   margin: 96px 0px;
+}
+.stats-section .stats-section-card img{
+   padding: 12px;
+   border-radius: 12px;
+   background-color: #101828;
+}
+.stats-section-card .stats-section-title h2{
+   color: #101828;
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 150%;
+}
+.stats-section-card .stats-section-pera p{
+   color: #4A5565;
+   font-size: 14px;
+   font-weight: 400; 
+   line-height: 150px;
+}
+.about{
+   padding: 128px 0px;
+}
+.about  .about-container{
+   gap: 64px;
+}
+.about-head .about-label{
+   padding: 6px 12px;
+   color: #101828;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 150%;
+   border-radius: 33px;
+   width: fit-content;
+   background-color: #F3F4F6;
+}
+.about-head .about-title h2{
+   color: #101828;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 110%;
+}
+.about-head .about-pera P{
+   color: #4A5565;
+   font-size: 17px;
+   font-weight: 400;
+   line-height: 160%;
+}
+.about .about-card{
+   padding: 33px;
+   border-radius: 20px;
+   border: 1px solid rgba(16, 24, 40, 0.05);
+   background-color: #FFF;
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px -2px rgba(0, 0, 0, 0.06); 
+}
+.about .about-card .quot-icon img{
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #F3F4F6;
+}
+.about .about-card .stars{
+   margin: 24px 0px 14px;
+}
+.about .about-card .about-pera p{
+   color: #364153;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 170%;
+   margin-bottom: 24px;
+}
+.about .about-card .about-card-profile{
+    gap: 12px;
+    padding: 14px 0px;
+    border-top: 1px solid rgba(16, 24, 40, 0.05);
+}
+.about-card .about-card-profile img{
+   height: 48px;
+   width: 48px;
+}
+.about-card .about-card-profile h3{
+   color: #101828;
+   font-size: 15px;
+   font-weight: 700;
+   line-height: 150%;
+}
+.about-card .about-card-profile p{
+   color: #4A5565;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 150%;
+}
+@media (max-width:992px){
+   .about-body{
+      flex-wrap: wrap;
+   }
+}
+.about-footer{
+   gap: 24px;
+   padding-top: 49px;
+   border-top: 1px solid rgba(16, 24, 40, 0.05);
+}
+.about-footer .about-footer-label{
+   color: #6A7282;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 150%;
+}
+.about-footer .about-footer-texts{
+   color:rgb(146,150,156);
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 150%;
 }
