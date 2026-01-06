@@ -631,9 +631,13 @@ line-height: 160%;
 .about .about-card{
    padding: 33px;
    border-radius: 20px;
-   border: 1px solid rgba(16, 24, 40, 0.05);
    background-color: #FFF;
+   border: 1px solid rgba(16, 24, 40, 0.05);
    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 8px -2px rgba(0, 0, 0, 0.06); 
+   transition: 0.3s;
+}
+.about .about-card:hover{
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 10px 15px 5px rgba(0, 0, 0, 0.06); 
 }
 .about .about-card .quot-icon img{
    padding: 10px;
@@ -700,7 +704,7 @@ line-height: 160%;
    padding: 128px 0px;
 }
 .journal .journal-container .journal-card{
-   padding: 80px;
+   padding: 80px 40px;
    border-radius: 28px;
    background: linear-gradient(135deg, #101828 0%, #1E2939 50%, #101828 100%);
 }
@@ -738,7 +742,7 @@ line-height: 160%;
    border: 1px solid rgba(255, 255, 255, 0.20);
    background: rgba(255, 255, 255, 0.10);
    outline: none;
-   flex: 1;
+   width: 100%;
 }
 .journal-card .journal-form button{
    padding: 14px 24px;
@@ -749,6 +753,8 @@ line-height: 160%;
    font-weight: 400;
    line-height: 150%;
    border: none;
+   flex: 1;
+   width: 100%;
 }
 .journal-card .journal-form button img{
    transition: 0.1s;
@@ -785,4 +791,52 @@ line-height: 160%;
    font-size: 13px;
    font-weight: 400;
    line-height: 150%;
+}
+.footer-body .brand-logo{
+   gap: 10px;
+}
+.footer-body .brand-logo h1{
+   color: #101828;
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 150%;
+}
+.footer-body .footer-contact-pera p{
+   margin-top: 20px;
+   color: #4A5565;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 170%;
+   margin-bottom: 5px;
+}
+.footer-body .footer-contact-logo{
+   width: 40px;
+   height: 40px;
+   border-radius: 10px;
+   background: #F3F4F6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer-body .footer-links, .footer-body .footer-links ul{
+   padding: 0px;
+}
+.footer-body .footer-links li{
+   list-style-type: none;
+}
+.footer-body .footer-links .footer-links-header{
+   margin-bottom: 5px;
+   color: #101828;
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 150%;
+}
+.footer-body .footer-links li a{
+   padding-top: 15px;
+   text-decoration: none;
+   color: #4A5565;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 150%;
+   display: inline-block;
 }
