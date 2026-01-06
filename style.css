@@ -439,9 +439,40 @@ line-height: 160%;
 .rdious-24{
    border-radius: 24px;
 }
+.collections-body .coll-left{
+   overflow: hidden;
+}
+.collections-body .coll-left::after{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.30) 50%, rgba(0, 0, 0, 0.00) 100%);
+   top: 0px;
+   left: 0px;
+   z-index: 0;
+}
+.collections-body .coll-right-overlay{
+   z-index: 1;
+}
+.collections-body .coll-right-1, .collections-body .coll-right-2{
+   overflow: hidden;
+}
+.collections-body .coll-right-1::after , .collections-body .coll-right-2::after{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.30) 50%, rgba(0, 0, 0, 0.00) 100%);
+   top: 0px;
+   left: 0px;
+   z-index: 0;
+}
+
 .coll-left-overlay{
    bottom: 40px;
    left: 40px;
+   z-index: 1;
 }
 .coll-left .coll-left-label{
    width: fit-content;
@@ -486,6 +517,12 @@ line-height: 160%;
 .coll-left .coll-left-btn:hover.coll-left-btn img{
    transform: translateX(3px);
 }
+.collections-body .coll-left .coll-img{
+   transition: 0.5s;
+}
+.collections-body .coll-left:hover .coll-img{
+   transform: scale(1.05);
+}
 .coll-right{
    gap: 24px;
 }
@@ -517,6 +554,12 @@ line-height: 160%;
 }
 .coll-right .coll-right-btn:hover.coll-right-btn img{
    transform: translateX(3px);
+}
+.collections-body .coll-right-1 .coll-img , .collections-body .coll-right-2 .coll-img{
+   transition: 0.5s;
+}
+.collections-body .coll-right-1:hover .coll-img , .collections-body .coll-right-2:hover .coll-img{
+   transform: scale(1.05);
 }
 @media (max-width:992px){
    .coll-left .coll-left-title{
