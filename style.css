@@ -149,6 +149,7 @@ nav .navbar-brand h1{
    transition: 0.2s;
 }
 .hero-btn-group .h-btn-1{
+   color: #ffffff;
    background-color: var(--dark);
 }
 .hero-btn-group .h-btn-1:hover{
@@ -535,7 +536,9 @@ line-height: 160%;
 }
 .stats-section{
    background: #F9FAFB;
-   margin: 96px 0px;
+}
+.stats-section .stats-section-container{
+   padding: 96px 0px;
 }
 .stats-section .stats-section-card img{
    padding: 12px;
@@ -645,5 +648,98 @@ line-height: 160%;
    color:rgb(146,150,156);
    font-size: 20px;
    font-weight: 700;
+   line-height: 150%;
+}
+.journal{
+   background: linear-gradient(180deg, #F9FAFB 0%, #FFF 100%);
+}
+.journal .journal-container{
+   padding: 128px 0px;
+}
+.journal .journal-container .journal-card{
+   padding: 80px;
+   border-radius: 28px;
+   background: linear-gradient(135deg, #101828 0%, #1E2939 50%, #101828 100%);
+}
+.journal .journal-card .journal-label{
+   color: #FFF;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 150%;
+   padding: 8px 14px;
+   border-radius: 33px;
+   background: rgba(255, 255, 255, 0.10);
+}
+.journal .journal-card .journal-title h2{
+   margin: 21px 0px 17px;
+   color: #FFF;
+   font-size: 44px;
+   font-weight: 700;
+   line-height: 110%;
+}
+.journal .journal-card .journal-pera p{
+   color: rgba(255, 255, 255, 0.70);
+   font-size: 17px;
+   font-weight: 400;
+   line-height: 160%;
+}
+.journal .journal-card .journal-form{
+   margin:40px 0px 15px;
+   gap: 12px;
+   max-width: 512px;
+}
+.journal-card .journal-form input{
+   color: #ffffff;
+   border-radius: 12px;
+   padding: 15px 0px 15px 20px;
+   border: 1px solid rgba(255, 255, 255, 0.20);
+   background: rgba(255, 255, 255, 0.10);
+   outline: none;
+   flex: 1;
+}
+.journal-card .journal-form button{
+   padding: 14px 24px;
+   border-radius: 12px;
+   background: #FFF;
+   color: #101828;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 150%;
+   border: none;
+}
+.journal-card .journal-form button img{
+   transition: 0.1s;
+}
+.journal-card .journal-form button:hover img{
+   transform: translateX(3px);
+}
+.journal-card .journal-form input::placeholder{
+   color: rgba(255, 255, 255, 0.50);
+   font-size: 15px;
+   font-weight: 400;
+}
+.journal .journal-card .journal-bottom-text{
+   color: rgba(255, 255, 255, 0.50);
+   text-align: center;
+   font-size: 13px;
+   font-weight: 400;
+   line-height:150%;
+}
+.footer{
+   border-top: 1px solid rgba(16, 24, 40, 0.05);
+   background: #FFF;
+}
+.footer-container{
+   gap: 80px;
+   padding-top: 80px;
+}
+.footer-container .footer-bottom{
+   padding: 33px 0px;
+   border-top: 1px solid rgba(16, 24, 40, 0.05);
+}
+.footer-container .footer-bottom p{
+   color: #6A7282;
+   font-size: 13px;
+   font-weight: 400;
    line-height: 150%;
 }
