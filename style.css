@@ -231,9 +231,11 @@ nav .navbar-brand h1{
    font-weight: 700;
    line-height: 150%;
 }
+.featured{
+   padding: 128px 0 128px;
+}
 .featured-container{
    gap: 64px;
-   padding-bottom: 128px;
 }
 .featured-head .section-label{
    margin-bottom: 16px;
